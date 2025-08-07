@@ -30,6 +30,7 @@ convertButton.addEventListener('click', async event => {
   const para = selectTo.value;
 
   if (de === para) return alert("Escolha moedas diferentes para conversão.");
+  if (!rawValue || isNaN(valor)) return alert("Digite um valor válido.");
   if (isNaN(valor) || !de || !para) return alert("Preencha os campos corretamente.");
 
   try {
