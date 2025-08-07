@@ -7,52 +7,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="./imgs/ArrowsDownUp.png" alt="Icone de troca em setas">
+        <img src="imgs/ArrowsDownUp.png" alt="Icone de troca em setas">
         <h4>CONVERT</h4>
     </header>
     <main>
         <section class="section-inputs">
             <section class="section-inputs-infos">
                 <label class="section-inputs-infos-label">Valor</label>
-                <input type="number" class="section-inputs-infos-input" placeholder="0,00">
+                <input type="text" id="input-value" class="section-inputs-infos-input" placeholder="0,00">
             </section>
             <section class="section-inputs-infos">
                 <label class="section-inputs-infos-label">De</label>
-                <select id="" class="section-inputs-infos-input section-inputs-infos-input-select">
-                    <option value="">USD</option>
-                    <option value="">BRL</option>
-                    <option value="">EUR</option>
-                    <option value="">BTC</option>
-                    <option value="">ETH</option>
-                </select>
+                <select id="currency-from" class="section-inputs-infos-input section-inputs-infos-input-select"></select>
             </section>
             <section class="section-inputs-infos">
                 <label class="section-inputs-infos-label">Para</label>
-                <select id="" class="section-inputs-infos-input section-inputs-infos-input-select">
-                    <option value="">USD</option>
-                    <option value="">BRL</option>
-                    <option value="">EUR</option>
-                    <option value="">BTC</option>
-                    <option value="">ETH</option>
-                </select>
+                <select id="currency-to" class="section-inputs-infos-input section-inputs-infos-input-select"></select>
             </section>
             <section class="section-inputs-infos">
-                <button class="section-inputs-infos-button" type="submit">Converter</button>
+                <button id="convert-button" class="section-inputs-infos-button" type="button">Converter</button>
             </section>
         </section>
-        <section class="section-result">
-            <section class="section-result-texts">
-                <p>US$ 1 = R$ 4,86</p>
-                <h1>486,00 Reais</h1>
+        <section id="result-section" class="section-result hidden">
+            <section id="result-container" class="section-result-texts">
             </section>
         </section>
     </main>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

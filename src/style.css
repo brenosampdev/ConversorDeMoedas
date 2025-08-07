@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-image:url("./imgs/Background.png");
+    background-image: url("imgs/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -134,6 +134,18 @@ main {
     border-radius: 0rem 0rem 1rem 1rem;
 }
 
+.section-inputs.flat-bottom {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.section-result.active {
+  display: flex;
+}
+
+.section-result.show {
+  display: block;
+}
+
 .section-result-texts {
     display: flex;
     flex-direction: column;
@@ -141,4 +153,16 @@ main {
     justify-content: center;
     gap: 0.5rem;
     padding: 2.5rem;
+}
+
+.section-result-texts p {
+    font-size: 0.75rem;
+    color: var(--blue-900);
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 1px;
+}
+
+.hidden {
+  display: none;
 }
