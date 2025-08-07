@@ -20,7 +20,10 @@ app.get('/currencies', (req, res) => {
     { code: 'CAD', name: 'Dólar Canadense' },
     { code: 'CHF', name: 'Franco Suíço' },
     { code: 'CNY', name: 'Yuan Chinês' },
-    { code: 'ARS', name: 'Peso Argentino' }
+    { code: 'ARS', name: 'Peso Argentino' },
+    { code: 'BTC', name: 'Bitcoin' },
+    { code: 'ETH', name: 'Ethereum' },
+    { code: 'ARS', name: 'Peso Argentino' },
   ];
   res.json({ currencies });
 });
