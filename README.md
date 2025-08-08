@@ -20,8 +20,7 @@ Este projeto é um conversor de moedas completo, desenvolvido com **HTML**, **CS
 - HTML5  
 - CSS3  
 - JavaScript  
-- Node.js + Express  
-- Google Fonts: Inter e Monomaniac One  
+- Node.js + Express 
 - [AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas) para taxas de câmbio
 
 ---
